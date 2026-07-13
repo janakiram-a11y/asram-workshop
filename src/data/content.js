@@ -49,18 +49,280 @@ export const schedule = {
   lecture: 'Content Coming Soon',
   caseDiscussion: 'Interactive Case Discussions',
   handsOn: 'SPSS Hands-on Training',
-  timetable: 'Content Coming Soon',
+  // Session lineup extracted from "ACRI INTERNATIONAL CONFERENCE 2026 Faculty.docx".
+  // Date, time, and venue were not specified per session in the source document,
+  // so those fields are left empty rather than invented.
+  sessions: [
+    {
+      session: 'Opening International Keynote',
+      speaker: 'Dr Laura Avantagiatti',
+      designation: 'George Washington University, USA',
+      title: 'Translational Research: Bridging Discovery, Innovation and Patient Care',
+      focus: 'Bench-to-bedside research, global collaborations, precision medicine, translational research ecosystem',
+      date: '',
+      time: '',
+      venue: '',
+    },
+    {
+      session: 'Session 1',
+      speaker: 'Dr Vinod Mattoo',
+      designation: 'Exec Director-Diagnosearch',
+      title: 'The Evolution of Clinical Trials: Past, Present and the Future of Global Drug Development',
+      focus: 'Evolution of clinical trials, decentralised trials, digital transformation, global regulatory landscape',
+      date: '',
+      time: '',
+      venue: '',
+    },
+    {
+      session: 'Session 2',
+      speaker: 'Dr Indranil B',
+      designation: 'Country Medical Lead – Eli Lilly; Real World Evidence Expert',
+      title: 'Real World Evidence: Transforming Clinical Decision Making Beyond Randomized Trials',
+      focus: 'Real World Data (RWD), Real World Evidence (RWE), health outcomes, regulatory acceptance, payer decisions',
+      date: '',
+      time: '',
+      venue: '',
+    },
+    {
+      session: 'Session 3',
+      speaker: 'Dr Joy',
+      designation: 'Dean Research, AIIMS MG',
+      title: 'AIIMS Research Initiatives: Advancing Healthcare Through Collaborative Research',
+      focus: 'Institutional research ecosystem, multicentric studies, societal impact, national collaborations',
+      date: '',
+      time: '',
+      venue: '',
+    },
+    {
+      session: 'Session 4',
+      speaker: 'Dr Parthasarathy',
+      designation: 'Professor & Head, Community Medicine',
+      title: 'Population Health Research: Bridging Public Health, Clinical Research and Policy',
+      focus: 'Epidemiology, implementation research, community-based studies, public health innovations',
+      date: '',
+      time: '',
+      venue: '',
+    },
+    {
+      session: 'Special Address',
+      speaker: 'Dr D. V. Rao',
+      designation: 'MS, Research Patron, ACRI',
+      title: 'Building a Sustainable Research Culture in Academic Medical Institutions',
+      focus: 'Leadership in research, institutional capacity building, research governance, innovation culture',
+      date: '',
+      time: '',
+      venue: '',
+    },
+    {
+      session: 'Session 5',
+      speaker: 'Dr Sachin',
+      designation: 'Faculty, TISS',
+      title: 'Qualitative Research Methods in Healthcare: Generating Meaningful Evidence Beyond Numbers',
+      focus: 'Preventive health, qualitative research, mixed methods, community engagement, data analytics',
+      date: '',
+      time: '',
+      venue: '',
+    },
+    {
+      session: 'Expert Panel Discussion',
+      speaker: 'Sri Sreeramulu Reddy',
+      designation: 'Head – Clinical Trials, Santha Biotech',
+      title: 'Future of Vaccine Clinical Research in India: Opportunities and Emerging Challenges',
+      focus: 'Vaccine development, regulatory pathways, pandemic preparedness, innovation',
+      date: '',
+      time: '',
+      venue: '',
+    },
+    {
+      session: 'Session 6',
+      speaker: 'Dr Santosh Narla',
+      designation: 'Head – Real World Evidence, Shilpa Medicare',
+      title: 'Regulatory Perspectives on Real World Evidence and Post-Marketing Research',
+      focus: 'Pharmacovigilance, RWE regulations, observational studies, regulatory expectations',
+      date: '',
+      time: '',
+      venue: '',
+    },
+    {
+      session: 'Session 7',
+      speaker: 'Dr Sanjay Reddy',
+      designation: 'Dir-Cliniqtec; Adjt Prof, ACRI',
+      title: 'Harnessing Real-Time Clinical Data: From Study Planning to Scientific Publication',
+      focus: 'Data management, digital health, analytics, publication strategy, AI-enabled research',
+      date: '',
+      time: '',
+      venue: '',
+    },
+    {
+      session: 'Session 8',
+      speaker: 'Dr Sumit Rawat',
+      designation: 'Founder – Nirog Mantras',
+      title: 'Mastering Literature Review and Critical Appraisal for High-Impact Research',
+      focus: 'Evidence synthesis, systematic reviews, critical appraisal, scientific writing',
+      date: '',
+      time: '',
+      venue: '',
+    },
+    {
+      session: 'Industry Expert Session',
+      speaker: 'Dr Shubhadeep Sinha',
+      designation: 'SVP & Med Director-Hetero',
+      title: 'Phase I & BA/BE Research in India: Building Excellence in Early Clinical Development',
+      focus: 'Healthy volunteer studies, BA/BE operations, Phase I infrastructure, regulatory compliance, future opportunities',
+      date: '',
+      time: '',
+      venue: '',
+    },
+  ],
 }
 
+// Speaker roster extracted from "ACRI INTERNATIONAL CONFERENCE 2026 Faculty.docx".
+// Credentials were not specified per speaker in the source document, so that
+// field is left empty rather than invented; position/institution are split
+// from the document's single designation field where the split is unambiguous.
 export const speakers = {
   intro: 'Content Coming Soon',
-  list: Array.from({ length: 4 }, () => ({
-    name: 'Content Coming Soon',
-    credentials: 'Content Coming Soon',
-    position: 'Content Coming Soon',
-    institution: 'Content Coming Soon',
-    achievements: ['Content Coming Soon'],
-  })),
+  list: [
+    {
+      // Bio verified against her Georgetown University faculty profile:
+      // https://gufaculty360.georgetown.edu/s/contact/00336000014RZL4AAO/maria-laura-avantaggiati
+      name: 'Dr Laura Avantaggiati',
+      credentials: 'MD',
+      position: 'Associate Professor of Oncology',
+      institution: 'Georgetown University, Lombardi Cancer Center',
+      photo: '/assets/speakers/laura-avantaggiati.png',
+      achievements: [
+        'Lecture Topic: Translational Research: Bridging Discovery, Innovation and Patient Care',
+        'Key Focus Areas: Bench-to-bedside research, global collaborations, precision medicine, translational research ecosystem',
+      ],
+    },
+    {
+      // Bio verified against his LinkedIn profile:
+      // https://www.linkedin.com/in/vinod-mattoo-a3729a8/
+      name: 'Dr Vinod Mattoo',
+      credentials: '',
+      position: 'Exec Director',
+      institution: 'DiagnoSearch Life Sciences',
+      photo: '/assets/speakers/vinod-mattoo.jpg',
+      achievements: [
+        'Lecture Topic: The Evolution of Clinical Trials: Past, Present and the Future of Global Drug Development',
+        'Key Focus Areas: Evolution of clinical trials, decentralised trials, digital transformation, global regulatory landscape',
+        'Background: Medical Affairs and Clinical Development experience at Country, Region and Global Headquarters levels; Specialties in Endocrinology, Diabetes and Cardiovascular Medicine',
+      ],
+    },
+    {
+      name: 'Dr Indranil Bhattacharya',
+      credentials: '',
+      position: 'Country Medical Lead; Real World Evidence Expert',
+      institution: 'Eli Lilly',
+      photo: '/assets/speakers/indranil-bhattacharya.jpg',
+      achievements: [
+        'Lecture Topic: Real World Evidence: Transforming Clinical Decision Making Beyond Randomized Trials',
+        'Key Focus Areas: Real World Data (RWD), Real World Evidence (RWE), health outcomes, regulatory acceptance, payer decisions',
+      ],
+    },
+    {
+      // Bio verified against his AIIMS Mangalagiri faculty profile:
+      // https://www.aiimsmangalagiri.edu.in/doctor/dr-joy-a-ghoshal/
+      name: 'Dr Joy A Ghoshal',
+      credentials: 'MBBS, MS, DNB (Anatomy)',
+      position: 'Dean Research',
+      institution: 'AIIMS MG',
+      photo: '/assets/speakers/joy-ghoshal.png',
+      achievements: [
+        'Lecture Topic: AIIMS Research Initiatives: Advancing Healthcare Through Collaborative Research',
+        'Key Focus Areas: Institutional research ecosystem, multicentric studies, societal impact, national collaborations',
+        'Current Designation: Professor, AIIMS Mangalagiri (Founder Dean, 2018-2021; Founder Dean Academic, 2021-2023)',
+      ],
+    },
+    {
+      name: 'Dr Parthasarathy',
+      credentials: '',
+      position: 'Professor & Head',
+      institution: 'Community Medicine',
+      achievements: [
+        'Lecture Topic: Population Health Research: Bridging Public Health, Clinical Research and Policy',
+        'Key Focus Areas: Epidemiology, implementation research, community-based studies, public health innovations',
+      ],
+    },
+    {
+      name: 'Dr D. V. Rao',
+      credentials: 'MS',
+      position: 'Research Patron',
+      institution: 'ACRI',
+      achievements: [
+        'Lecture Topic: Building a Sustainable Research Culture in Academic Medical Institutions',
+        'Key Focus Areas: Leadership in research, institutional capacity building, research governance, innovation culture',
+      ],
+    },
+    {
+      name: 'Dr Sachin Ganorkar',
+      credentials: '',
+      position: 'Faculty',
+      institution: 'TISS',
+      photo: '/assets/speakers/sachin-ganorkar.jpg',
+      achievements: [
+        'Lecture Topic: Qualitative Research Methods in Healthcare: Generating Meaningful Evidence Beyond Numbers',
+        'Key Focus Areas: Preventive health, qualitative research, mixed methods, community engagement, data analytics',
+      ],
+    },
+    {
+      name: 'Sri Sreeramulu Reddy',
+      credentials: '',
+      position: 'Head – Clinical Trials',
+      institution: 'Santha Biotech',
+      achievements: [
+        'Lecture Topic: Future of Vaccine Clinical Research in India: Opportunities and Emerging Challenges',
+        'Key Focus Areas: Vaccine development, regulatory pathways, pandemic preparedness, innovation',
+      ],
+    },
+    {
+      name: 'Dr Santosh Narla',
+      credentials: '',
+      position: 'Head – Real World Evidence',
+      institution: 'Shilpa Medicare',
+      achievements: [
+        'Lecture Topic: Regulatory Perspectives on Real World Evidence and Post-Marketing Research',
+        'Key Focus Areas: Pharmacovigilance, RWE regulations, observational studies, regulatory expectations',
+      ],
+    },
+    {
+      // Bio verified against his Fortis Healthcare profile:
+      // https://www.fortishealthcare.com/doctors/dr-sanjay-c-reddy-1206
+      name: 'Dr Sanjay Reddy',
+      credentials: 'MBBS, MD (Gen Medicine)',
+      position: 'Dir-Cliniqtec; Adjt Prof',
+      institution: 'ACRI',
+      photo: '/assets/speakers/sanjay-reddy.jpg',
+      achievements: [
+        'Lecture Topic: Harnessing Real-Time Clinical Data: From Study Planning to Scientific Publication',
+        'Key Focus Areas: Data management, digital health, analytics, publication strategy, AI-enabled research',
+        'Clinical Practice: Consultant Internal Medicine (Diabetology/Endocrinology), Fortis Hospital, Bangalore',
+      ],
+    },
+    {
+      name: 'Dr Sumit Rawat',
+      credentials: '',
+      position: 'Founder',
+      institution: 'Nirog Mantras',
+      photo: '/assets/speakers/sumit-rawat.jpg',
+      achievements: [
+        'Lecture Topic: Mastering Literature Review and Critical Appraisal for High-Impact Research',
+        'Key Focus Areas: Evidence synthesis, systematic reviews, critical appraisal, scientific writing',
+      ],
+    },
+    {
+      name: 'Dr Shubhadeep D Sinha',
+      credentials: '',
+      position: 'SVP & Med Director',
+      institution: 'Hetero',
+      photo: '/assets/speakers/shubhadeep-sinha.jpg',
+      achievements: [
+        'Lecture Topic: Phase I & BA/BE Research in India: Building Excellence in Early Clinical Development',
+        'Key Focus Areas: Healthy volunteer studies, BA/BE operations, Phase I infrastructure, regulatory compliance, future opportunities',
+      ],
+    },
+  ],
 }
 
 export const patrons = {
