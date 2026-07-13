@@ -75,8 +75,8 @@ export const schedule = {
     },
     {
       session: 'Session 2',
-      speaker: 'Dr Indranil B',
-      designation: 'Country Medical Lead – Eli Lilly; Real World Evidence Expert',
+      speaker: 'Dr Krishna G Seshadri',
+      designation: 'Endocrinologist, Apollo Hospitals Greams Road, Chennai',
       title: 'Real World Evidence: Transforming Clinical Decision Making Beyond Randomized Trials',
       focus: 'Real World Data (RWD), Real World Evidence (RWE), health outcomes, regulatory acceptance, payer decisions',
       date: '',
@@ -211,11 +211,13 @@ export const speakers = {
       ],
     },
     {
-      name: 'Dr Indranil Bhattacharya',
-      credentials: '',
-      position: 'Country Medical Lead; Real World Evidence Expert',
-      institution: 'Eli Lilly',
-      photo: '/assets/speakers/indranil-bhattacharya.jpg',
+      // Bio verified against his Apollo 247 profile:
+      // https://www.apollo247.com/doctors/dr-krishna-g-seshadri-f2733ddc-a6f0-47ae-b7c7-c3c50d6f231e
+      name: 'Dr Krishna G Seshadri',
+      credentials: 'MBBS, AB Certified',
+      position: 'Endocrinologist',
+      institution: 'Apollo Hospitals Greams Road, Chennai',
+      photo: '/assets/speakers/krishna-seshadri.jpg',
       achievements: [
         'Lecture Topic: Real World Evidence: Transforming Clinical Decision Making Beyond Randomized Trials',
         'Key Focus Areas: Real World Data (RWD), Real World Evidence (RWE), health outcomes, regulatory acceptance, payer decisions',
@@ -240,6 +242,7 @@ export const speakers = {
       credentials: '',
       position: 'Professor & Head',
       institution: 'Community Medicine',
+      photo: '/assets/speakers/parthasarathy.jpg',
       achievements: [
         'Lecture Topic: Population Health Research: Bridging Public Health, Clinical Research and Policy',
         'Key Focus Areas: Epidemiology, implementation research, community-based studies, public health innovations',
@@ -271,6 +274,7 @@ export const speakers = {
       credentials: '',
       position: 'Head – Clinical Trials',
       institution: 'Santha Biotech',
+      photo: '/assets/speakers/sreeramulu-reddy.jpg',
       achievements: [
         'Lecture Topic: Future of Vaccine Clinical Research in India: Opportunities and Emerging Challenges',
         'Key Focus Areas: Vaccine development, regulatory pathways, pandemic preparedness, innovation',
@@ -281,6 +285,7 @@ export const speakers = {
       credentials: '',
       position: 'Head – Real World Evidence',
       institution: 'Shilpa Medicare',
+      photo: '/assets/speakers/santosh-narla.jpg',
       achievements: [
         'Lecture Topic: Regulatory Perspectives on Real World Evidence and Post-Marketing Research',
         'Key Focus Areas: Pharmacovigilance, RWE regulations, observational studies, regulatory expectations',
