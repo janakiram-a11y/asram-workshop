@@ -11,7 +11,7 @@ export const hero = {
 }
 
 export const infoCard = {
-  date: '29–30 August 2026',
+  date: '26–27 September 2026',
   timings: 'Content Coming Soon',
   venueLine1: 'ASRAM Medical College,',
   venueLine2: 'Eluru, Andhra Pradesh',
